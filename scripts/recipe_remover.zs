@@ -1,0 +1,1 @@
+smithing.removeByName("supplementaries:safe");

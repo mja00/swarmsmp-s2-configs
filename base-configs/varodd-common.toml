@@ -1,0 +1,38 @@
+
+[general]
+	verboseLog = false
+
+[mobs]
+
+	[mobs."AI control"]
+		#Enables the more destructive AI behaviours of many Oddities
+		optionalAI = true
+
+		[mobs."AI control"."individual AI control"]
+			rat = true
+			kobold = true
+			goblin = true
+			giant_scorpion = true
+			giant_rat = true
+			scorpion = true
+
+	[mobs.spawn_switches]
+		#Setting this to FALSE will prevent all Oddities from spawning naturally, which is more ideal for adventure maps and the like
+		naturalSpawns = true
+
+		[mobs.spawn_switches."individual spawn switches"]
+			rat = true
+			kobold = true
+			goblin = true
+			giant_scorpion = true
+			giant_rat = true
+			scorpion = true
+
+	[mobs.spawn_config]
+		rat = "{forest:overworld,20,6},{minecraft:swampland,400,6},{minecraft:swampland_mutated,400,6},{minecraft:dark_forest,200,6},{biomesoplenty:coniferous_forest,60,6},{biomesoplenty:dead_forest,60,6},{biomesoplenty:dead_swamp,40,6},{biomesoplenty:flower_field,20,6},{biomesoplenty:lavender_fields,20,6},{biomesoplenty:temperate_rainforest,40,6},{biomesoplenty:pasture,10,6}"
+		kobold = "{hot:dry:sandy:overworld,400,6},{minecraft:desert,400,6},{minecraft:desert_hills,400,6},{biomesoplenty:brushland,8,6},{biomesoplenty:lush_desert,15,6},{biomesoplenty:outback,20,6}"
+		goblin = "{spooky:forest:overworld,600,6},{minecraft:dark_forest,600,6},{biomesoplenty:bamboo_forest,60,6},{biomesoplenty:bayou,60,6},{biomesoplenty:land_of_lakes,60,6},{biomesoplenty:redwood_forest,60,6}"
+		giant_scorpion = "{hot:dry:sandy,100,2},{hot:dry:mesa,100,2},{hot:wasteland,100,2},{minecraft:desert,100,2},{minecraft:desert_hills,100,2},{biomesoplenty:brushland,40,2},{biomesoplenty:outback,80,2},{biomesoplenty:wasteland,40,2},{biomesoplenty:xeric_shrubland,60,2}"
+		giant_rat = "{forest:overworld,20,1},{minecraft:swampland,200,1},{minecraft:swampland_mutated,200,1},{minecraft:dark_forest,100,1},{biomesoplenty:coniferous_forest,60,1},{biomesoplenty:dead_forest,60,1},{biomesoplenty:dead_swamp,80,1}"
+		scorpion = "{hot:dry:sandy:overworld,100,3},{hot:dry:mesa:overworld,100,3},{hot:wasteland:overworld,100,3},{minecraft:desert,100,3},{minecraft:desert_hills,100,3},{biomesoplenty:brushland,80,3},{biomesoplenty:outback,80,3},{biomesoplenty:wasteland,80,3},{biomesoplenty:xeric_shrubland,80,3}"
+
