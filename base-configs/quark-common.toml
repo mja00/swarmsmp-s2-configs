@@ -1666,7 +1666,7 @@
 [mobs]
 	Frogs = true
 	Crabs = true
-	Stonelings = true
+	Stonelings = false
 	Foxhound = true
 	Forgotten = true
 	Wraith = true
@@ -1683,7 +1683,7 @@
 
 		[mobs.toretoise.spawn_config]
 			#Allowed values: (0,)
-			"Spawn Weight" = 100
+			"Spawn Weight" = 0
 			#Allowed values: [1,)
 			"Min Group Size" = 1
 			#Allowed values: [1,)

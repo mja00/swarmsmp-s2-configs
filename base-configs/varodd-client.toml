@@ -1,0 +1,13 @@
+
+[hud]
+	hide_abilities = false
+	announce_cooldown_finish = true
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	HUD_corner = "TOP_LEFT"
+	#Allowed Values: FULL, CROPPED, SNEAKING
+	name_display_style = "CROPPED"
+	hold_key_for_ability_menu = false
+
+[misc]
+	"year-round Pride visuals" = false
+

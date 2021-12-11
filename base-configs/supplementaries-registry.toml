@@ -54,7 +54,7 @@
 		candelabra = true
 		timber_frame = true
 		spring_launcher = true
-		safe = false
+		safe = true
 		sconce_lever = true
 		#WIP
 		present = true

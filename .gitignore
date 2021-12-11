@@ -1,3 +1,7 @@
 base-configs/worldedit/.archive-unpack/*
 base-configs/worldedit/sessions/*
 .DS_Store
+
+base-configs/PlasmoVoice/config.json
+
+base-configs/PlasmoVoice/server.yml

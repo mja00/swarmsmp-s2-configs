@@ -48,14 +48,10 @@ displayTooLargePackets = true
 	excludedTickDistanceMobs = []
 	#Fix leash lag from entities on a leash, default = true
 	fixLeash = true
-	#Should entities with glowing effect always be rendered?. default = true
-	alwaysglow = true
 	#Enable multithreading support for entities, requires fastCollisions to be enabled. default = true
 	multiEntities = true
 	#Disables block changes notifying all entity paths in the world, to possibly adjust their paths, disable with IE, incompat, default = true
 	disableNotifyOnBlockChange = true
-	#List of entities excluded from beeing affected by dynamic entity rendering, by entity ID: e.g. format :  ["minecraft:zombie", "minecraft:creeper"]
-	excludedRenderHidingMobs = []
 	#Slower updating of armor stands, default = true
 	slowArmorStands = true
 	#Enables improved entity collision and movement calculations for any non item entity, default = true
@@ -80,6 +76,10 @@ displayTooLargePackets = true
 	entityUpdateDistanceReduction = 0
 	#Enable faster pathfinding, default = true
 	fastPathFinding = true
+	#List of entities excluded from beeing affected by dynamic entity rendering, by entity ID: e.g. format :  ["minecraft:zombie", "minecraft:creeper"]
+	excludedRenderHidingMobs = []
+	#Should entities with glowing effect always be rendered?. default = true
+	alwaysglow = true
 
 ["Entity AI Settings"]
 	#Sets the tick interval in which non-running AI tasks are rechecked. Vanilla default is 1(starting with 1.13+), this mods suggested default is 4(as it was in vanilla 1.12)

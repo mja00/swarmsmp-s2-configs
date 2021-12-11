@@ -1,8 +1,13 @@
 
 [general]
 	verboseLog = false
+	players_spawn_corpses = false
+	#Range: > 0
+	bludgeoning_recovery_rate_seconds = 60
 
 [mobs]
+	#Open species select screen when players log-in
+	selectSpeciesOnLogin = true
 
 	[mobs."AI control"]
 		#Enables the more destructive AI behaviours of many Oddities
@@ -15,6 +20,14 @@
 			giant_scorpion = true
 			giant_rat = true
 			scorpion = true
+			crab = true
+			giant_crab = true
+			worg = true
+			warg = true
+			ghastling = true
+			patron_kirin = true
+			patron_witch = true
+			changeling = true
 
 	[mobs.spawn_switches]
 		#Setting this to FALSE will prevent all Oddities from spawning naturally, which is more ideal for adventure maps and the like
@@ -27,12 +40,49 @@
 			giant_scorpion = true
 			giant_rat = true
 			scorpion = true
+			crab = true
+			giant_crab = true
 
-	[mobs.spawn_config]
-		rat = "{forest:overworld,20,6},{minecraft:swampland,400,6},{minecraft:swampland_mutated,400,6},{minecraft:dark_forest,200,6},{biomesoplenty:coniferous_forest,60,6},{biomesoplenty:dead_forest,60,6},{biomesoplenty:dead_swamp,40,6},{biomesoplenty:flower_field,20,6},{biomesoplenty:lavender_fields,20,6},{biomesoplenty:temperate_rainforest,40,6},{biomesoplenty:pasture,10,6}"
-		kobold = "{hot:dry:sandy:overworld,400,6},{minecraft:desert,400,6},{minecraft:desert_hills,400,6},{biomesoplenty:brushland,8,6},{biomesoplenty:lush_desert,15,6},{biomesoplenty:outback,20,6}"
-		goblin = "{spooky:forest:overworld,600,6},{minecraft:dark_forest,600,6},{biomesoplenty:bamboo_forest,60,6},{biomesoplenty:bayou,60,6},{biomesoplenty:land_of_lakes,60,6},{biomesoplenty:redwood_forest,60,6}"
-		giant_scorpion = "{hot:dry:sandy,100,2},{hot:dry:mesa,100,2},{hot:wasteland,100,2},{minecraft:desert,100,2},{minecraft:desert_hills,100,2},{biomesoplenty:brushland,40,2},{biomesoplenty:outback,80,2},{biomesoplenty:wasteland,40,2},{biomesoplenty:xeric_shrubland,60,2}"
-		giant_rat = "{forest:overworld,20,1},{minecraft:swampland,200,1},{minecraft:swampland_mutated,200,1},{minecraft:dark_forest,100,1},{biomesoplenty:coniferous_forest,60,1},{biomesoplenty:dead_forest,60,1},{biomesoplenty:dead_swamp,80,1}"
-		scorpion = "{hot:dry:sandy:overworld,100,3},{hot:dry:mesa:overworld,100,3},{hot:wasteland:overworld,100,3},{minecraft:desert,100,3},{minecraft:desert_hills,100,3},{biomesoplenty:brushland,80,3},{biomesoplenty:outback,80,3},{biomesoplenty:wasteland,80,3},{biomesoplenty:xeric_shrubland,80,3}"
+	[mobs.types]
+		#Setting this to FALSE will disable the effects of all types
+		"Types Matter" = true
+		#Open the type selection screen when a player first logs in
+		"Choose Types on login" = false
+
+		[mobs.types.Mobs]
+			ABERRATION = "minecraft:elder_guardian,minecraft:guardian"
+			AIR = ""
+			AMPHIBIOUS = "minecraft:elder_guardian,minecraft:guardian"
+			ANIMAL = "minecraft:squid,minecraft:cow,minecraft:pig,minecraft:sheep,minecraft:llama,minecraft:horse,minecraft:donkey,minecraft:cat,minecraft:ocelot,minecraft:fox,minecraft:wolf,minecraft:chicken,minecraft:bat,minecraft:parrot,minecraft:rabbit,minecraft:polar_bear,minecraft:panda,minecraft:turtle,minecraft:dolphin,minecraft:hoglin"
+			AQUATIC = "minecraft:elder_guardian,minecraft:guardian,minecraft:drowned,minecraft:squid,minecraft:dolphin"
+			AUGMENTED = ""
+			COLD = "minecraft:snow_golem"
+			CONSTRUCT = "minecraft:snow_golem,minecraft:iron_golem,minecraft:shulker"
+			DRAGON = "minecraft:ender_dragon"
+			EARTH = ""
+			ELEMENTAL = "minecraft:blaze"
+			EXTRAPLANAR = "minecraft:ender_dragon,minecraft:enderman,minecraft:ghast,minecraft:endermite,minecraft:shulker,minecraft:blaze,minecraft:magma_cube,minecraft:strider,minecraft:piglin,minecraft:piglin_brute,minecraft:hoglin,varodd:ghastling"
+			EVIL = "minecraft:creeper,minecraft:phantom"
+			FEY = "minecraft:vex"
+			FIRE = "minecraft:blaze,minecraft:magma_cube,minecraft:strider"
+			GIANT = ""
+			GOBLIN = "varodd:goblin"
+			HOLY = ""
+			HUMANOID = "minecraft:player,minecraft:witch,minecraft:villager,minecraft:wandering_trader,minecraft:pillager,minecraft:vindicator,minecraft:evoker,minecraft:piglin,minecraft:piglin_brute,varodd:goblin,varodd:kobold"
+			INCORPOREAL = ""
+			MAGICAL_BEAST = "minecraft:strider,minecraft:ravager"
+			MONSTROUS_HUMANOID = ""
+			OUTSIDER = "minecraft:enderman,minecraft:ghast,varodd:ghastling"
+			NATIVE = ""
+			PLANT = "minecraft:creeper"
+			REPTILE = "varodd:kobold"
+			SHAPECHANGER = ""
+			OOZE = "minecraft:slime,minecraft:magma_cube"
+			UNDEAD = "minecraft:wither,minecraft:husk,minecraft:drowned,minecraft:zombie,minecraft:zombie_horse,minecraft:zombie_villager,minecraft:zombified_piglin,minecraft:zoglin,minecraft:skeleton,minecraft:wither_skeleton,minecraft:stray,minecraft:skeleton_horse,minecraft:phantom"
+			VERMIN = "minecraft:bee,minecraft:spider,minecraft:cave_spider,minecraft:silverfish,minecraft:endermite,varodd:rat,varodd:giant_rat,varodd:scorpion,varodd:giant_scorpion"
+			WATER = ""
+
+	[mobs.factions]
+		reputationChanges = true
+		defaults = "{Factions:[{InitialRep:0,Relations:[{Rep:-100,Name:\"goblin\"}],Name:\"kobold\"},{InitialRep:-30,Relations:[{Rep:-100,Name:\"kobold\"}],Name:\"goblin\"}]}"
 
